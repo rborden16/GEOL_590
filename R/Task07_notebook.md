@@ -54,7 +54,7 @@ further operations.
 
     ## Warning: Removed 3 rows containing missing values (geom_point).
 
-![](images/unnamed-chunk-3-1.png)
+![](Task07_notebook_files/figure-markdown_strict/unnamed-chunk-3-1.png)
 
 This code filters the wind speed data to remove the point over 1000 mph.
 
@@ -77,7 +77,7 @@ see if there are any more outliers. There are not.
 
     ggplot(wind1) + geom_point(aes(x = origin, y = wind_speed))
 
-![](images/unnamed-chunk-5-1.png)
+![](Task07_notebook_files/figure-markdown_strict/unnamed-chunk-5-1.png)
 
 This code makes a new table of the median wind speed for each direction
 at each airport. First, we group the data first by airport of origin and
@@ -115,7 +115,7 @@ plot for each airport of origin.
 
     ## Warning: Removed 3 rows containing missing values (geom_point).
 
-![](images/unnamed-chunk-7-1.png)
+![](Task07_notebook_files/figure-markdown_strict/unnamed-chunk-7-1.png)
 
 This code makes a table by joining the airlines dataset to the flights
 dataset using their common column "carrier". The data are then filtered
@@ -163,7 +163,7 @@ each sex.
       ylab("Frequency")
     print(name_plot)
 
-![](images/unnamed-chunk-12-1.png)
+![](Task07_notebook_files/figure-markdown_strict/unnamed-chunk-12-1.png)
 
     girl_names <- babynames %>%
       filter(sex == "F", year == 1896|year == 1942|year == 2016) %>%
@@ -254,4 +254,4 @@ number of planes manufactured per year, color coded by manufacturer.
 
     ## Warning: Removed 3 rows containing missing values (geom_point).
 
-![](images/unnamed-chunk-16-1.png)
+![](Task07_notebook_files/figure-markdown_strict/unnamed-chunk-16-1.png)
