@@ -5,6 +5,23 @@ This notebook goes through the steps to make a function that adds two
 columns of a data frame to make a new one, and then does some for loop
 tasks. The first step is to load the packages I will need.
 
+    knitr::opts_chunk$set(echo = TRUE)
+    library(tidyverse)
+
+    ## Loading tidyverse: ggplot2
+    ## Loading tidyverse: tibble
+    ## Loading tidyverse: tidyr
+    ## Loading tidyverse: readr
+    ## Loading tidyverse: purrr
+    ## Loading tidyverse: dplyr
+
+    ## Conflicts with tidy packages ----------------------------------------------
+
+    ## filter(): dplyr, stats
+    ## lag():    dplyr, stats
+
+    library(microbenchmark)
+
 Then I make a new data frame with two columns of numeric data.
 
     newdata <- tibble::tibble(
@@ -180,9 +197,9 @@ run.
     ## [1] 50005000
 
     ## Unit: microseconds
-    ##            expr      min        lq       mean   median       uq      max
-    ##  my_loop(test1) 3099.228 3373.5000 3928.74431 3507.934 4265.189 8428.259
-    ##      sum(test1)    9.891    9.9835   11.88942   11.536   12.454   32.392
+    ##            expr      min       lq       mean   median       uq      max
+    ##  my_loop(test1) 3155.457 3421.682 4092.65909 3733.552 4448.606 8946.489
+    ##      sum(test1)    9.885    9.941   12.37315   11.358   13.077   29.255
     ##  neval
     ##    100
     ##    100
