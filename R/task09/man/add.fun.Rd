@@ -2,18 +2,23 @@
 % Please edit documentation in R/add.fun.R
 \name{add.fun}
 \alias{add.fun}
-\title{This function adds two numbers together.}
+\title{Add together two numbers.}
 \usage{
 add.fun(x, y)
 }
 \arguments{
-\item{x}{A number}
+\item{x}{A number.}
 
-\item{y}{A number}
+\item{y}{A number.}
 }
 \value{
-The sum of \code{x} and \code{y}
+The sum of \code{x} and \code{y}.
 }
 \description{
-This function adds two numbers together.
+Add together two numbers.
+}
+\examples{
+add.fun(2, 3)
+add.fun(5, 5)
+
 }
